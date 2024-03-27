@@ -7,8 +7,9 @@ package instituto;
 import java.util.TreeSet;
 
 /**
- *
- * @author ProfDiurno
+ * Clase que permite crear cursos en los que se matriculan Personas
+ * @author Telma Teixiera
+ * @version 27/03/2024
  */
 public class Curso {
 
@@ -18,12 +19,17 @@ public class Curso {
     protected String getNombre() {
         return nombre;
     }
-
+   /**
+    * Constructor para crear cursos
+    *@param nombre recibe el nombre que se le va a asociar al curso
+    */
     public Curso(String nombre) {
         this.nombre = nombre;
         listaAlumnos = new TreeSet<>();
     }
-
+    /**
+     * Metodo que muestra los alumnos apuntados a la clase
+     */
     @Override
     public String toString() {
         String s = "--------------------" + nombre + "-----------------\n";
@@ -34,7 +40,10 @@ public class Curso {
         }
         return s;
     }
-
+    /**
+     * Metodo para añadir alumnos a la clase
+     * @param p Permite añadir personas a la clase
+     */
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);
     }
