@@ -1,27 +1,28 @@
 package com.mycompany.proyectofinalentornostelma;
 
-import static org.junit.jupiter.api.Assertions.*;
+
+import instituto.Curso;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.*;
 
 class CursoTest {
 
-
+    Curso c;
     @org.junit.jupiter.api.BeforeEach
     void setUp() {
-
+    c = new Curso("DAM");
     }
 
     @org.junit.jupiter.api.AfterEach
     void tearDown() {
 
     }
-
-    @org.junit.jupiter.api.Test
-    void getNombre() {
-
-    }
-
-    @org.junit.jupiter.api.Test
-    void aniadirAlumno() {
+    @Test
+    public void testConstructor() {
+        assertNotNull(c);
+        assertEquals("DAM", c.getNombre());
 
     }
+
 }

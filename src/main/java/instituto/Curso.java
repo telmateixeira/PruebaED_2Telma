@@ -13,12 +13,10 @@ import java.util.TreeSet;
  */
 public class Curso {
 
-    private String nombre;
-    private TreeSet<Persona> listaAlumnos;
+    protected String nombre;
+    protected TreeSet<Persona> listaAlumnos;
 
-    protected String getNombre() {
-        return nombre;
-    }
+
    /**
     * Constructor para crear cursos
     *@param nombre recibe el nombre que se le va a asociar al curso
@@ -30,6 +28,9 @@ public class Curso {
     /**
      * Metodo que muestra los alumnos apuntados a la clase
      */
+    public String getNombre() {
+        return nombre;
+    }
     @Override
     public String toString() {
         String s = "--------------------" + nombre + "-----------------\n";
@@ -45,7 +46,6 @@ public class Curso {
      * @param p Permite añadir personas a la clase
      */
     public void aniadirAlumno(Persona p) {
-
         listaAlumnos.add(p);
     }
 }
