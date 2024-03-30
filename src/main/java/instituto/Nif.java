@@ -28,7 +28,7 @@ public class Nif {
     /**
      *Constructor que pone el numero a 0 y letra vacia
      */
-    protected Nif() {
+    public Nif() {
         this.numero = 0;
         this.letra = ' ';
     }
@@ -36,7 +36,7 @@ public class Nif {
      * Constructor que recibe un numero y calcula la letra en base a ese numero
      * @param numero Un entero que nos sirve para calcular la letra
      */
-    protected Nif(int numero) {
+    public Nif(int numero) {
         this.numero = numero;
         this.letra = calcularLetra(numero);
     }
