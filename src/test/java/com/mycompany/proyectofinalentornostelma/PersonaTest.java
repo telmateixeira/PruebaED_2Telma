@@ -11,10 +11,16 @@ import java.time.LocalDate;
 
 public class PersonaTest {
     Persona persona = new Persona(12343222, "Juan Pérez", 'M', 25, 6, 1990);
+    Persona persona1 = new Persona(12345678, "Juan Pérez", 'M', 25, 6, 1990);
+    Persona persona2 = new Persona(12345678, "Pedro Gómez", 'M', 25, 6, 1990);
+    Persona persona3 = new Persona(87654321, "Juan Pérez", 'M', 25, 6, 1990);
 
     @BeforeEach
     public void setUp() {
         persona = new Persona(12343222, "Juan Pérez", 'M', 25, 6, 1990);
+        Persona persona1 = new Persona(12345678, "Juan Pérez", 'M', 25, 6, 1990);
+        Persona persona2 = new Persona(12345678, "Pedro Gómez", 'M', 25, 6, 1990);
+        Persona persona3 = new Persona(87654321, "Juan Pérez", 'M', 25, 6, 1990);
 
     }
 
@@ -33,5 +39,11 @@ public class PersonaTest {
     @Test
     public void testToString() {
         assertEquals("12343222-L\tJuan\tPérez\t\t33", persona.toString());
+    }
+
+    @Test
+    public void testEquals() {
+        assertTrue(persona1.equals(persona2));
+        assertFalse(persona1.equals(persona3));
     }
 }
