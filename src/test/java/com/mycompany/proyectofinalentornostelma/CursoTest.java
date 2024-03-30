@@ -39,5 +39,19 @@ class CursoTest {
         assertTrue(c.getListaAlumnos().contains(alumno2));
     }
 
+    @Test
+    public void testToString() {
+        c.aniadirAlumno(alumno1);
+        c.aniadirAlumno(alumno2);
+
+        String expected = "--------------------DAM-----------------\n" +
+                "NumExp\tNIF\t\tNombre\t\tApellidos\n" +
+                "-------------------------------------------------\n" +
+                "12345678-Z\tJuan\tPérez\t\t33\n" +
+                "87654321-X\tMaría\tLópez\t\t28\n";
+
+        assertEquals(expected, c.toString());
+    }
+
 
 }
