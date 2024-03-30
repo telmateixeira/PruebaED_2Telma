@@ -4,6 +4,7 @@
  */
 package instituto;
 
+import java.util.Collection;
 import java.util.TreeSet;
 
 /**
@@ -47,5 +48,9 @@ public class Curso {
      */
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);
+    }
+
+    public TreeSet<Persona> getListaAlumnos() {
+        return listaAlumnos;
     }
 }

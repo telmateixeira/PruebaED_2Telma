@@ -11,6 +11,9 @@ package instituto;
 public class ProyectoFinalEntornosTelma {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Curso c = new Curso("DAM");
+        Persona p = new Persona(1325431, "Telma", 'F', 20,3, 2010);
+        c.aniadirAlumno(p);
+        System.out.println(c.getListaAlumnos());
     }
 }
