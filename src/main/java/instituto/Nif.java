@@ -20,7 +20,7 @@ public class Nif {
                 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L',
                 'C', 'K', 'E'};
     /**
-     * 
+     *  Metodo privado para calcular la letra que se le va a asignar a cada NIF
     */
     private static char calcularLetra(int numero) {
         return LETRAS[numero % 23];

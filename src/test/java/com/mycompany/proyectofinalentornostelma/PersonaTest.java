@@ -9,6 +9,11 @@ import org.junit.jupiter.api.BeforeEach;
 
 import java.time.LocalDate;
 
+/**
+ * Clase que testea los metodos importantes de la clase Persona
+ * @author Telma Teixeira
+ * @version 30/03/2024
+ */
 public class PersonaTest {
     Persona persona = new Persona(12343222, "Juan Pérez", 'M', 25, 6, 1990);
     Persona persona1 = new Persona(12345678, "Juan Pérez", 'M', 25, 6, 1990);

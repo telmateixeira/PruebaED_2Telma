@@ -15,6 +15,7 @@ import java.util.TreeSet;
 public class Curso {
 
     protected String nombre;
+
     protected TreeSet<Persona> listaAlumnos;
 
 
@@ -28,10 +29,16 @@ public class Curso {
     }
     /**
      * Metodo que muestra los alumnos apuntados a la clase
+     * @return 
      */
     public String getNombre() {
         return nombre;
     }
+
+    /**
+     * Metodo que permite mostrar todos los cursos con los alumnos inscritos en el
+     * @return s Variable que devuelve todo el texto
+     */
     @Override
     public String toString() {
         String s = "--------------------" + nombre + "-----------------\n";
@@ -50,6 +57,10 @@ public class Curso {
         listaAlumnos.add(p);
     }
 
+    /**
+     * Metodo para mostrar la lista de los alumnos con TreeSet
+     * @return listaAlumnos
+     */
     public TreeSet<Persona> getListaAlumnos() {
         return listaAlumnos;
     }

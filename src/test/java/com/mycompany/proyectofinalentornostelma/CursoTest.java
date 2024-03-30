@@ -7,7 +7,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
 
-class CursoTest {
+/**
+ * Clase que testea los metodos importantes de la clase Curso
+ * @author Telma Teixeira
+ * @version 30/03/2024
+ */
+public class CursoTest {
 
     Curso c;
     Persona alumno1;
