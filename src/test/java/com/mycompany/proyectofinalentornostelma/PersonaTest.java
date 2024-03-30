@@ -30,5 +30,8 @@ public class PersonaTest {
         assertEquals(LocalDate.of(1990, 6, 25), persona.getNacimiento());
     }
 
-
+    @Test
+    public void testToString() {
+        assertEquals("12343222-L\tJuan\tPérez\t\t33", persona.toString());
+    }
 }
